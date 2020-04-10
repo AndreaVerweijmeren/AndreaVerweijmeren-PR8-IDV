@@ -1,0 +1,171 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {box-sizing: border-box}
+
+body {
+  padding: 20px;
+  background-color: #DCE8EE;
+}
+
+.picture {
+  text-align: center;
+  margin: 0px 0 20px 0;
+}
+
+.container {
+  padding: 16px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding:12px;
+  margin: 0px 0 15px 0;
+  display: inline-block;
+  border: none;
+  background: white;
+  border-radius: 25px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #C1C1C1;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #10263A;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+a {
+  color: dimgray;
+  font-family: Merriweather; 
+}
+
+a:hover {
+  color: #10263A;
+}
+
+p {
+  color: dimgray;
+  font-family: "open-sans"; 
+}
+
+.terms {
+  font-size: 8pt;
+}
+
+.signin {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+::placeholder {
+  color: #848484;
+  font-family: "open-sans";
+}
+
+/* Set a style for all buttons */
+button {
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: Merriweather;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+ opacity: 0.5;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #10263A;
+  margin-bottom: 10px;
+}
+
+b {
+	font-family: "open-sans";
+	font-size: 13pt;
+	color: #454545;
+	margin-left: 10px;
+}
+
+.avatar {
+  margin: 24px 0 12px 0;
+ background-color: #B9D5DE;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: center;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.img2 {
+	width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: relative;
+  transition: 200ms;
+ 
+}
+
+.avatar:hover img {
+  opacity: .6;
+}
+
+.avatar:hover .upload {
+  opacity: 1;
+}
+
+
+.img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: none;
+}
+
+#to-hide {
+display: none;
+	
+}
+
+.upload {
+  width: 40px;
+  height: 40px;
+  background: #4D667E;
+  border: none;
+  box-shadow: 0 0 0 6px #fff;
+  border-radius: 50%;
+  outline: none;
+  color: #000;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  opacity: 0;
+  transition: 200ms;
+	
+}
+
+.upload:hover {
+  background: #555;
+  color: #fff;
+}
